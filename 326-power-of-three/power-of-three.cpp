@@ -6,7 +6,7 @@ public:
         return false;
         for(int i=0;i<=n;i++)
         {
-       power=pow(3,i)  ;
+          power=pow(3,i);
       if(power==n)
       return true;
       if(power>n)

@@ -6,9 +6,9 @@ public:
         int c=0;
         for(int i=0;i<l;i++)
         {
-            for(int j=0;j<l;j++)
-            {
-                if((nums[j]<nums[i])&&(j!=i))
+        for(int j=0;j<l;j++)
+        {
+                if(nums[j]<nums[i])
                    c++;
             }
             result.push_back(c);

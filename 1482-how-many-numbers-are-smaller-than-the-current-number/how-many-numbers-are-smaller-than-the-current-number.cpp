@@ -8,11 +8,11 @@ public:
         {
         for(int j=0;j<l;j++)
         {
-                if(nums[j]<nums[i])
-                   c++;
-            }
-            result.push_back(c);
-            c=0;
+        if(nums[j]<nums[i])
+        c++;
+        }
+        result.push_back(c);
+        c=0;
         }
         return result;
     }

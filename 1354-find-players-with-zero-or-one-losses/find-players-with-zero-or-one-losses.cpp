@@ -18,7 +18,6 @@ public:
             if(p.second==1)
             v1.push_back(p.first);
         }
-       
         vector<vector<int>> ans;
         ans.push_back(v0);
         ans.push_back(v1);

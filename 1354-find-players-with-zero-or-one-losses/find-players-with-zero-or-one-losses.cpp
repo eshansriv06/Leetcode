@@ -3,7 +3,7 @@ public:
     vector<vector<int>> findWinners(vector<vector<int>>& matches) {
         vector<int> v0;
         vector<int> v1;
-          map<int,int> mp;
+          unordered_map<int,int> mp;
         for(auto p:matches)
         {
             int winner=p[0];
@@ -18,6 +18,8 @@ public:
             if(p.second==1)
             v1.push_back(p.first);
         }
+        sort(v1.begin(),v1.end());
+        sort(v0.begin(),v0.end());
         vector<vector<int>> ans;
         ans.push_back(v0);
         ans.push_back(v1);
